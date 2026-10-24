@@ -2,6 +2,7 @@ import {Composition, staticFile} from 'remotion';
 import type {Caption} from '@remotion/captions';
 import {CaptionedVideo} from './CaptionedVideo';
 import {SplitScreenVideo} from './SplitScreenVideo';
+import {Carousel, SLIDE_COUNT, SLIDE_HEIGHT, SLIDE_WIDTH} from './Carousel';
 
 const FPS = 30;
 
@@ -33,6 +34,15 @@ export const RemotionRoot: React.FC = () => {
         durationInFrames={300}
         defaultProps={{captions: [] as Caption[]}}
         calculateMetadata={calculateMetadata}
+      />
+      {/* Each frame is one carousel slide; render with --sequence to get one PNG per slide */}
+      <Composition
+        id="Carousel"
+        component={Carousel}
+        width={SLIDE_WIDTH}
+        height={SLIDE_HEIGHT}
+        fps={1}
+        durationInFrames={SLIDE_COUNT}
       />
     </>
   );

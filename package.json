@@ -6,7 +6,8 @@
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts CaptionedVideo out/reel.mp4",
-    "render:split": "remotion render src/index.ts SplitScreen out/reel-split.mp4"
+    "render:split": "remotion render src/index.ts SplitScreen out/reel-split.mp4",
+    "render:carousel": "remotion render src/index.ts Carousel out/carousel --sequence --image-format=png"
   },
   "repository": {
     "type": "git",

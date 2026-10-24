@@ -3,10 +3,12 @@ import {loadFont} from '@remotion/fonts';
 
 export const FONT_FAMILY = 'Montserrat';
 
-for (const subset of ['cyrillic', 'latin']) {
-  loadFont({
-    family: FONT_FAMILY,
-    url: staticFile(`montserrat-${subset}-800-normal.woff2`),
-    weight: '800',
-  });
+for (const weight of ['500', '800']) {
+  for (const subset of ['cyrillic', 'latin']) {
+    loadFont({
+      family: FONT_FAMILY,
+      url: staticFile(`montserrat-${subset}-${weight}-normal.woff2`),
+      weight,
+    });
+  }
 }

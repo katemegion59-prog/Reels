@@ -12,3 +12,10 @@
 Сцены привязаны к началу предложений в `captions.json`.
 
 Рендер: `npm run render:split` → `out/reel-split.mp4`
+
+## Карусель
+
+Композиция `Carousel` (1080×1350, один кадр = один слайд): история о том, как из исходного видео получился Reels.
+Скриншоты для слайдов лежат в `public/carousel/`.
+
+Рендер: `npm run render:carousel` → `out/carousel/element-*.png`
