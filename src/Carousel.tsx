@@ -10,8 +10,8 @@ const PINK = '#FF5DA2';
 const CYAN = '#4FD1FF';
 const GREEN = '#3DDC84';
 const MUTED = 'rgba(255,255,255,0.72)';
-// Comment keyword for the course pre-registration call to action
-const CTA_KEYWORD = 'РИЛС';
+// Comment keyword for the call to action
+const CTA_KEYWORD = 'ХОЧУ';
 
 const Hl: React.FC<{children: React.ReactNode; color?: string}> = ({children, color = YELLOW}) => (
   <span style={{color}}>{children}</span>
@@ -287,49 +287,30 @@ const slides: React.ReactNode[] = [
       ))}
     </div>
   </>,
-  // 9 — call to action: course pre-registration
+  // 9 — call to action
   <>
-    <div
-      style={{
-        alignSelf: 'flex-start',
-        background: PINK,
-        color: 'white',
-        fontWeight: 800,
-        fontSize: 30,
-        padding: '10px 26px',
-        borderRadius: 999,
-        textTransform: 'uppercase',
-      }}
-    >
-      Открыта предзапись
-    </div>
-    <Title size={76}>
-      Научу делать <Hl>такие Reels</Hl> с нейросетью
-    </Title>
-    <Body size={38}>Без монтажа и сложных программ — пошагово, на твоих собственных видео.</Body>
-    <div style={{display: 'flex', flexDirection: 'column', gap: 26, marginTop: 10}}>
-      <Check>Субтитры, которые попадают в каждое слово</Check>
-      <Check>Разделённый экран с анимацией под твой текст</Check>
-      <Check>Карусели для постов — как эта</Check>
-    </div>
-    <div style={{flex: 1}} />
-    <div
-      style={{
-        background: YELLOW,
-        color: '#14132a',
-        borderRadius: 36,
-        padding: '40px 44px',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 14,
-        boxShadow: '0 24px 60px rgba(255,230,0,0.25)',
-      }}
-    >
-      <div style={{fontWeight: 800, fontSize: 50, lineHeight: 1.15, textTransform: 'uppercase'}}>
-        Напиши «{CTA_KEYWORD}» в комментариях
-      </div>
-      <div style={{fontWeight: 500, fontSize: 34, lineHeight: 1.35}}>
-        и я пришлю тебе в директ подробности курса и ссылку на предзапись
+    <div style={{flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 50}}>
+      <Title size={96}>
+        Хочешь научиться <Hl>так же?</Hl>
+      </Title>
+      <Body size={42}>Делать такие Reels с нейросетью — без монтажа и сложных программ.</Body>
+      <div
+        style={{
+          background: YELLOW,
+          color: '#14132a',
+          borderRadius: 36,
+          padding: '44px 48px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 16,
+          marginTop: 20,
+          boxShadow: '0 24px 60px rgba(255,230,0,0.25)',
+        }}
+      >
+        <div style={{fontWeight: 800, fontSize: 56, lineHeight: 1.15, textTransform: 'uppercase'}}>
+          Оставь комментарий «{CTA_KEYWORD}»
+        </div>
+        <div style={{fontWeight: 500, fontSize: 38, lineHeight: 1.35}}>и я отправлю тебе информацию</div>
       </div>
     </div>
   </>,
