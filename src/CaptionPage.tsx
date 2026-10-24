@@ -1,12 +1,13 @@
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {TikTokPage} from '@remotion/captions';
-import {FONT_FAMILY} from './CaptionedVideo';
+import {FONT_FAMILY} from './fonts';
 
 const HIGHLIGHT_COLOR = '#FFE600';
-// Bottom margin required by the brief is at least 170 px; keep extra room for platform UI
-const BOTTOM_OFFSET = 300;
-
-export const CaptionPage: React.FC<{page: TikTokPage}> = ({page}) => {
+export const CaptionPage: React.FC<{page: TikTokPage; bottomOffset: number; fontSize: number}> = ({
+  page,
+  bottomOffset,
+  fontSize,
+}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
 
@@ -16,14 +17,14 @@ export const CaptionPage: React.FC<{page: TikTokPage}> = ({page}) => {
   const enter = spring({frame, fps, config: {damping: 14, stiffness: 200}, durationInFrames: 8});
 
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: BOTTOM_OFFSET}}>
+    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: bottomOffset}}>
       <div
         style={{
           maxWidth: 940,
           textAlign: 'center',
           fontFamily: FONT_FAMILY,
           fontWeight: 800,
-          fontSize: 86,
+          fontSize,
           lineHeight: 1.25,
           textTransform: 'uppercase',
           transform: `translateY(${interpolate(enter, [0, 1], [40, 0])}px) scale(${interpolate(enter, [0, 1], [0.85, 1])})`,
