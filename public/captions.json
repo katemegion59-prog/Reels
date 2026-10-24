@@ -1,0 +1,128 @@
+[
+ {
+  "text": "Друзья,",
+  "startMs": 0,
+  "endMs": 920,
+  "timestampMs": 460,
+  "confidence": 0.957
+ },
+ {
+  "text": " всем",
+  "startMs": 980,
+  "endMs": 1060,
+  "timestampMs": 1020,
+  "confidence": 0.955
+ },
+ {
+  "text": " привет!",
+  "startMs": 1060,
+  "endMs": 1420,
+  "timestampMs": 1240,
+  "confidence": 0.998
+ },
+ {
+  "text": " Я",
+  "startMs": 1660,
+  "endMs": 1740,
+  "timestampMs": 1700,
+  "confidence": 0.962
+ },
+ {
+  "text": " сейчас",
+  "startMs": 1740,
+  "endMs": 2080,
+  "timestampMs": 1910,
+  "confidence": 0.966
+ },
+ {
+  "text": " тестирую",
+  "startMs": 2080,
+  "endMs": 3200,
+  "timestampMs": 2640,
+  "confidence": 0.87
+ },
+ {
+  "text": " Claude.",
+  "startMs": 3200,
+  "endMs": 3600,
+  "timestampMs": 3400,
+  "confidence": 0.619
+ },
+ {
+  "text": " Хочу",
+  "startMs": 3760,
+  "endMs": 4200,
+  "timestampMs": 3980,
+  "confidence": 0.99
+ },
+ {
+  "text": " создать",
+  "startMs": 4200,
+  "endMs": 4860,
+  "timestampMs": 4530,
+  "confidence": 0.984
+ },
+ {
+  "text": " рилс",
+  "startMs": 4860,
+  "endMs": 5380,
+  "timestampMs": 5120,
+  "confidence": 0.566
+ },
+ {
+  "text": " с",
+  "startMs": 6340,
+  "endMs": 6520,
+  "timestampMs": 6430,
+  "confidence": 0.896
+ },
+ {
+  "text": " помощью",
+  "startMs": 6520,
+  "endMs": 6800,
+  "timestampMs": 6660,
+  "confidence": 0.937
+ },
+ {
+  "text": " нейросети.",
+  "startMs": 6800,
+  "endMs": 7620,
+  "timestampMs": 7210,
+  "confidence": 0.537
+ },
+ {
+  "text": " Посмотрим,",
+  "startMs": 7780,
+  "endMs": 8280,
+  "timestampMs": 8030,
+  "confidence": 0.974
+ },
+ {
+  "text": " что",
+  "startMs": 8300,
+  "endMs": 8480,
+  "timestampMs": 8390,
+  "confidence": 0.986
+ },
+ {
+  "text": " из",
+  "startMs": 8480,
+  "endMs": 8640,
+  "timestampMs": 8560,
+  "confidence": 0.99
+ },
+ {
+  "text": " этого",
+  "startMs": 8640,
+  "endMs": 8880,
+  "timestampMs": 8760,
+  "confidence": 0.997
+ },
+ {
+  "text": " выйдет.",
+  "startMs": 8880,
+  "endMs": 9380,
+  "timestampMs": 9130,
+  "confidence": 0.982
+ }
+]

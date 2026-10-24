@@ -1,0 +1,35 @@
+{
+  "name": "reels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts CaptionedVideo out/reel.mp4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katemegion59-prog/Reels.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katemegion59-prog/Reels/issues"
+  },
+  "homepage": "https://github.com/katemegion59-prog/Reels#readme",
+  "dependencies": {
+    "@remotion/captions": "^4.0.538",
+    "@remotion/cli": "^4.0.538",
+    "@remotion/fonts": "^4.0.538",
+    "@remotion/media": "^4.0.538",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@fontsource/montserrat": "^5.3.0",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
